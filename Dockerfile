@@ -1,5 +1,7 @@
 FROM node:12.8.1 as base
+
 WORKDIR /app
+
 COPY ["package.json", "package-lock.json*", "./"]
 
 FROM base as test 
